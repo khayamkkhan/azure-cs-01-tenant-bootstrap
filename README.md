@@ -82,7 +82,9 @@ flowchart TB
     style Diag fill:#243A5E,color:#fff
 ```
 
-A polished NotebookLM-generated infographic (Azure Blue theme, sketch-note style) will be added here once produced — see `assets/infographic.png`.
+A polished NotebookLM-generated infographic (Azure Blue theme, sketch-note style) — recruiter-facing summary in a single image:
+
+![Project 01 — Hardened Azure Tenant Bootstrap (Infographic)](assets/infographic.png)
 
 ---
 
