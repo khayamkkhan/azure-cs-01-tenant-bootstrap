@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor temp files
+*.swp
+*.swo
+*~
+
+# Personal study doc — kept in Obsidian Vault, not in public repo
+walkthrough.md
