@@ -1,0 +1,9 @@
+# CODEOWNERS for azure-cs-01-tenant-bootstrap
+#
+# Sole maintainer and code owner of this repository.
+# All technical work (Azure resources, Bicep IaC, drift validation,
+# architectural decisions, screenshots, and documentation) is by Khayam Khan.
+#
+# Reference: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-security/customizing-your-repository/about-code-owners
+
+* @khayamkkhan
