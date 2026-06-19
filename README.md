@@ -9,9 +9,9 @@
 
 ## 1. What I Built
 
-A **hardened Azure tenant baseline** — the foundational state that every later project in this portfolio (Projects 02–09) builds on. It is the configuration that turns a fresh "I just clicked sign-up on Azure Free" account into something a security engineer would call **safe to use**: MFA enforced on every account, a break-glass admin pattern, cost guardrails, a central log destination, governance via tag policy, and a complete audit trail.
+A hardened Azure tenant baseline. It's the foundational state that every later project in this portfolio (Projects 02–09) builds on, and it turns a fresh Azure Free sign-up into something a security engineer would call safe to use: MFA on every account, a break-glass admin, cost guardrails, a central log destination, tag-policy governance, and a complete audit trail.
 
-It also exists as **infrastructure-as-code** (Bicep) and is **drift-validated** — running `az deployment sub what-if` against the deployed state shows zero changes across all 7 resources, proving the code accurately represents reality.
+It also exists as infrastructure-as-code in Bicep, and it's drift-validated. Running `az deployment sub what-if` against the deployed state shows zero changes across all 7 resources, so the code matches reality.
 
 ---
 
@@ -26,7 +26,7 @@ It also exists as **infrastructure-as-code** (Bicep) and is **drift-validated** 
 
 **Who hurts**: Solo developers learning Azure, startups bootstrapping their first subscription, and enterprises spinning up dev/sandbox tenants under the radar. All of them assume "I'll harden it later" — *later* is when the incident happens.
 
-**Why it matters**: A SOC analyst who can spot misconfigurations in their *own* environment is the one who catches them in production. The bootstrap is the first attack surface — and the easiest one to fix.
+**Why it matters**: A SOC analyst who can spot misconfigurations in their own environment is the one who catches them in production. The bootstrap is the first attack surface, and the easiest one to fix.
 
 ---
 
@@ -180,9 +180,9 @@ The SOC differentiator: thinking offensively about what was built.
 | 08 | `08-log-analytics-workspace.png` | LAW Active, PerGB2018, tagged |
 | 09 | `09-tag-policy-assignments.png` | All 3 tag policies assigned + auto-applied ASC Default initiative |
 | 10 | `10-diagnostic-settings-activity-log.png` | All 8 Activity Log categories → LAW |
-| 11 | `11-bicep-whatif-no-drift.png` | 🏆 **`Resource changes: 7 no change.`** — Bicep IaC validated against deployed state |
+| 11 | `11-bicep-whatif-no-drift.png` | `Resource changes: 7 no change.` Bicep validated against the deployed state |
 
-The "money shot" is **screenshot 11** — provable, point-in-time evidence that the IaC code (`infra/baseline.bicep`) faithfully represents the deployed Azure state.
+Screenshot 11 is the one that matters most. It's point-in-time evidence that the Bicep in `infra/baseline.bicep` matches the deployed Azure state.
 
 ---
 
